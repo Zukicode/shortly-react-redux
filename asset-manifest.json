@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shortly-react-redux/static/css/main.58f91b97.css",
-    "main.js": "/shortly-react-redux/static/js/main.889a64da.js",
+    "main.css": "/shortly-react-redux/static/css/main.08d6c4cd.css",
+    "main.js": "/shortly-react-redux/static/js/main.f51273bc.js",
     "static/media/illustration-working.svg": "/shortly-react-redux/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/icon-fully-customizable.svg": "/shortly-react-redux/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
     "static/media/icon-brand-recognition.svg": "/shortly-react-redux/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
@@ -21,11 +21,11 @@
     "static/media/icon-facebook-hover.svg": "/shortly-react-redux/static/media/icon-facebook-hover.b972f5ce59831921376a.svg",
     "static/media/icon-facebook.svg": "/shortly-react-redux/static/media/icon-facebook.1981a2dbf2e91defc5ef9db0ea7b0183.svg",
     "static/media/bg-shorten-mobile.svg": "/shortly-react-redux/static/media/bg-shorten-mobile.41c34b33a14a3077e506.svg",
-    "main.58f91b97.css.map": "/shortly-react-redux/static/css/main.58f91b97.css.map",
-    "main.889a64da.js.map": "/shortly-react-redux/static/js/main.889a64da.js.map"
+    "main.08d6c4cd.css.map": "/shortly-react-redux/static/css/main.08d6c4cd.css.map",
+    "main.f51273bc.js.map": "/shortly-react-redux/static/js/main.f51273bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.58f91b97.css",
-    "static/js/main.889a64da.js"
+    "static/css/main.08d6c4cd.css",
+    "static/js/main.f51273bc.js"
   ]
 }
