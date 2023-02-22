@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //Copy hook
 import { useClipboard } from 'use-clipboard-copy';
@@ -7,9 +7,13 @@ import { useClipboard } from 'use-clipboard-copy';
 import style from './ItemLink.module.scss';
 
 export const ItemLink = ({ short_link, original_link }) => {
+	const [activeCopy, setActiveCopy] = useState(false);
 	const clipboard = useClipboard();
 
-	const copyLink = () => clipboard.copy(short_link);
+	const copyLink = () => {
+		clipboard.copy(short_link);
+		setActiveCopy(true);
+	};
 
 	const redirectLink = () => (window.location.href = original_link);
 
@@ -20,7 +24,12 @@ export const ItemLink = ({ short_link, original_link }) => {
 			<div className={style.activeSection}>
 				{/* eslint-disable-next-line */}
 				<a onClick={redirectLink}>{short_link}</a>
-				<button onClick={copyLink}>Copy</button>
+				<button
+					className={activeCopy ? style.activeButton : ''}
+					onClick={copyLink}
+				>
+					{activeCopy ? 'Copied!' : 'Copy'}
+				</button>
 			</div>
 		</div>
 	);
