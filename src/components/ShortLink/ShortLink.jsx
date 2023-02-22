@@ -14,10 +14,11 @@ import {
 	onChangeInput,
 	setLinksFromLocalStorage,
 } from 'redux/slices/linkSlice';
+import { Loader } from 'components/Loader/Loader';
 
 export const ShortLink = () => {
 	const dispatch = useDispatch();
-	const { value, links } = useSelector(state => state.links);
+	const { value, links, status } = useSelector(state => state.links);
 	const [activeError, setActiveError] = useState(false);
 
 	useEffect(() => {
@@ -46,9 +47,11 @@ export const ShortLink = () => {
 			</div>
 
 			<div className={style.itemLinks}>
-				{links.map(link => (
-					<ItemLink key={link.code} {...link} />
-				))}
+				{status === 'loading' ? (
+					<Loader />
+				) : (
+					links.map(link => <ItemLink key={link.code} {...link} />)
+				)}
 			</div>
 		</div>
 	);
