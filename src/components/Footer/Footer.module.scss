@@ -1,0 +1,191 @@
+@import 'styles/variables.scss';
+
+.backgroundParent {
+	width: 100%;
+	height: 100%;
+	background-color: $color-dark-violet;
+
+	@media (min-width: 4000px) {
+		height: 950px;
+	}
+
+	.content {
+		width: 100%;
+		height: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		@media (max-width: 900px) {
+			justify-content: space-between;
+		}
+
+		@media (max-width: 800px) {
+			height: 100%;
+			padding-top: 50px;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			padding-bottom: 50px;
+		}
+
+		div {
+			height: 200px;
+		}
+
+		.title {
+			padding-bottom: 50px;
+			@media (max-width: 800px) {
+				display: flex;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+			}
+
+			h1 {
+				color: $color-white;
+			}
+		}
+
+		.features {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				a {
+					color: $color-gray-violet;
+					transition: all 0.4s;
+
+					&:hover {
+						color: $primary-cyan;
+					}
+				}
+			}
+
+			h1 {
+				color: $color-white;
+				font-size: 18px;
+			}
+		}
+
+		.resources {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				a {
+					color: $color-gray-violet;
+					transition: all 0.4s;
+
+					&:hover {
+						color: $primary-cyan;
+					}
+				}
+			}
+
+			h1 {
+				color: $color-white;
+				font-size: 18px;
+			}
+		}
+
+		.company {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				a {
+					color: $color-gray-violet;
+					transition: all 0.4s;
+
+					&:hover {
+						color: $primary-cyan;
+					}
+				}
+			}
+
+			h1 {
+				color: $color-white;
+				font-size: 18px;
+			}
+		}
+
+		.socialNetwork {
+			width: 170px;
+
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width: 800px) {
+				height: 100%;
+				padding-top: 50px;
+			}
+
+			.facebookBtn {
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				background: url('/assets/images/icon-facebook.svg') no-repeat;
+				transition: all 0.4s;
+
+				&:hover {
+					background: url('/assets/images/icon-facebook-hover.svg') no-repeat;
+				}
+			}
+
+			.twitterBtn {
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				background: url('/assets/images/icon-twitter.svg') no-repeat;
+				position: relative;
+				top: 2px;
+				transition: all 0.4s;
+
+				&:hover {
+					background: url('/assets/images/icon-twitter-hover.svg') no-repeat;
+				}
+			}
+
+			.pinterestBtn {
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				background: url('/assets/images/icon-pinterest.svg') no-repeat;
+				transition: all 0.4s;
+
+				&:hover {
+					background: url('/assets/images/icon-pinterest-hover.svg') no-repeat;
+				}
+			}
+
+			.instagramBtn {
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				background: url('/assets/images/icon-instagram.svg') no-repeat;
+				transition: all 0.4s;
+
+				&:hover {
+					background: url('/assets/images/icon-instagram-hover.svg') no-repeat;
+				}
+			}
+		}
+	}
+}

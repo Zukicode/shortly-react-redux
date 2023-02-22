@@ -1,0 +1,45 @@
+@import 'styles/variables.scss';
+
+.content {
+	width: 80%;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	top: 3px;
+
+	p {
+		color: $color-red;
+		margin-top: 5px;
+	}
+
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+
+	input {
+		width: 100%;
+		padding: 16px 35px;
+		font-size: 19px;
+		border-radius: 8px;
+		border: 3px solid transparent;
+		color: $color-gray;
+
+		@media (max-width: 440px) {
+			font-size: 16px;
+		}
+
+		&::placeholder {
+			color: $color-gray;
+		}
+
+		&.error {
+			border: 3px solid $color-red;
+
+			&::placeholder {
+				color: rgba($color-red, 0.5);
+			}
+		}
+	}
+}
